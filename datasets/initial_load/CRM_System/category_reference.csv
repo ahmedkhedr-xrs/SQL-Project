@@ -1,0 +1,21 @@
+ID,CAT,SUBCAT,WARRANTY
+MOB_SMP,Mobile Devices,Smartphones,Yes
+MOB_TAB,Mobile Devices,Tablets,Yes
+MOB_SWA,Mobile Devices,Smartwatches,No
+COM_LAP,Computers,Laptops,Yes
+COM_DSK,Computers,Desktops,Yes
+COM_MTB,Computers,Motherboards,No
+COM_RAM,Computers,RAM Modules,No
+COM_GPU,Computers,Graphics Cards,Yes
+COM_STR,Computers,Storage (SSD/HDD),No
+GAM_CON,Gaming,Consoles,Yes
+GAM_CTR,Gaming,Controllers,No
+GAM_ACC,Gaming,Gaming Accessories,No
+DIS_MON,Displays,Monitors,Yes
+DIS_TVS,Displays,Televisions,Yes
+ACC_CHG,Accessories,Chargers,No
+ACC_CAB,Accessories,Cables,No
+ACC_PWB,Accessories,Power Banks,No
+ACC_CAS,Accessories,Phone Cases,No
+ACC_SCR,Accessories,Screen Protectors,No
+COM_PRT,Computers,Printers,Yes
