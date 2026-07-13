@@ -55,7 +55,7 @@ SELECT
 	ROW_NUMBER() OVER(ORDER BY ep.prd_start_dt , ep.prd_key) AS product_key ,
 	ep.prd_id AS product_id,
 	ep.prd_key AS product_number,
-	ep.prd_nm  AS prdouct_name,
+	ep.prd_nm  AS product_name,
 	cr.ID AS category_id,
 	cr.CAT AS category_name, 
 	cr.SUBCAT AS sub_category,
