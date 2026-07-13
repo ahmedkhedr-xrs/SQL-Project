@@ -28,7 +28,7 @@ Schema** ready for BI tools, ad-hoc analysis, and future ML use cases.
 
 ## 🏗️ Architecture
 
-![High Level Architecture](docs/data_architecture.png)
+![High Level Architecture](Docs/data_architecture.png.png)
 
 | Layer  | Object Type | Load Strategy              | Transformations                                                      |
 |--------|-------------|-----------------------------|-----------------------------------------------------------------------|
