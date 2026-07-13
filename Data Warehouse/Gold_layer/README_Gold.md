@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 This directory contains the SQL scripts responsible for the **Gold Layer** of the Data Warehouse. Following the Medallion Architecture, this layer provides the final, business-ready dataset. 
-It transforms the cleansed and integrated data from the Silver layer into a highly optimized **Star Schema**, consisting of Fact and Dimension tables (Views). This layer serves as the foundation for the Advanced Analytics and BI dashboarding phase of the project.
+It transforms the cleansed and integrated data from the Silver layer into a highly optimized **Star Schema**, consisting of Fact and Dimension tables (Views). This layer serves as the foundation for the EDA and Advanced Analytics phase of the project.
 
 ## ⚙️ Architecture & Key Features
 The Gold layer focuses on analytical performance, business logic integration, and ease of use for end-users (analysts and BI tools):
