@@ -38,11 +38,11 @@ Schema** ready for BI tools, ad-hoc analysis, and future ML use cases.
 
 ### Data Flow Across Layers
 
-![Data Flow](docs/data_flow.png)
+![Data Flow](Docs/data_flow.png)
 
 ### How the Two Source Systems Integrate
 
-![Data Integration](docs/data_integration.png)
+![Data Integration](Docs/data_integration.png)
 
 ---
 
@@ -158,9 +158,9 @@ theoretical ones) — a good showcase of practical debugging skills:
 
 ## ⭐ Gold Layer — Star Schema
 
-![Sales Data Mart Star Schema](docs/data_model.png)
+![Sales Data Mart Star Schema](Docs/data_model.png)
 
-Full column-level documentation: [`gold/data_catalog.md`](gold/data_catalog.md)
+Full column-level documentation: [`Gold/data_catalog.md`](Gold/data_catalog.md)
 
 ---
 
