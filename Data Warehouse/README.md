@@ -160,7 +160,7 @@ theoretical ones) — a good showcase of practical debugging skills:
 
 ![Sales Data Mart Star Schema](Docs/data_model.png)
 
-Full column-level documentation: [`Gold/data_catalog.md`](Gold/data_catalog.md)
+Full column-level documentation: [`Gold/data_catalog.md`](Docs/data_catalog.md)
 
 ---
 
