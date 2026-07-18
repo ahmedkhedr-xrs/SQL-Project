@@ -230,8 +230,10 @@ SELECT * FROM gold.report_branches;
 
 ## 👤 Author
 
-Ahmed Khedr — built as a Data Analyst portfolio project covering the full
+Ahmed Khedr — built as a Data Analyst/Engineer portfolio project covering the full
 lifecycle of a real-world Data Warehouse: dataset design, incremental ETL
 engineering, data cleansing, dimensional modeling, and business analytics.
 
 🔗 [GitHub](https://github.com/ahmedkhedr-xrs)
+🔗 [linkedin](www.linkedin.com/in/ahmed-fareed-khedr)
+
