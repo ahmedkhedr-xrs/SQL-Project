@@ -235,5 +235,5 @@ lifecycle of a real-world Data Warehouse: dataset design, incremental ETL
 engineering, data cleansing, dimensional modeling, and business analytics.
 
 🔗 [GitHub](https://github.com/ahmedkhedr-xrs)
-🔗 [linkedin](www.linkedin.com/in/ahmed-fareed-khedr)
+🔗 [!linkedin](www.linkedin.com/in/ahmed-fareed-khedr)
 
