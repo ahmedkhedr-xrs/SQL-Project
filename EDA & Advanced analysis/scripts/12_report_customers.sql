@@ -45,6 +45,8 @@ c.customer_key,
 c.customer_number,
 CONCAT(c.first_name, ' ', c.last_name) AS customer_name,
 c.gender AS gender,
+c.city AS city,
+c.create_date AS create_date,	
 DATEDIFF(year, c.birthdate, GETDATE()) AS  age
 FROM gold.fact_sales f
 LEFT JOIN gold.dim_customers c
@@ -52,6 +54,7 @@ ON c.customer_key = f.customer_key
 WHERE f.order_date IS NOT NULL
 	  AND c.customer_key IS NOT NULL 
 	  AND c.birthdate IS NOT NULL
+	  AND c.city IS NOT NULL
 ),
 customer_aggregation AS (
 /*---------------------------------------------------------------------------
@@ -62,20 +65,24 @@ SELECT
 	customer_number,
 	customer_name,
 	gender,
+	city,
 	age,
 	COUNT(DISTINCT order_number) AS total_orders,
 	SUM(sales_amount) AS total_sales,
 	SUM(quantity) AS total_quantity,
 	COUNT(DISTINCT product_key) AS total_products,
 	MAX(order_date) AS last_order_date,
-	DATEDIFF(month, MIN(order_date), MAX(order_date)) AS lifespan
+	DATEDIFF(month, MIN(order_date), MAX(order_date)) AS lifespan,
+	create_date
 FROM base_query
 GROUP BY 
 	customer_key,
 	customer_number,
 	customer_name,
 	gender,
-	age
+	city,
+	age,
+	create_date
 )
 
 -- Main Query
@@ -84,6 +91,7 @@ customer_key,
 customer_number,
 customer_name,
 gender,	
+city,	
 age,
 CASE 
 	 WHEN age < 20 THEN 'Under 20'
@@ -112,5 +120,6 @@ END AS avg_order_value,
 -- Compuate average monthly spend
 CASE WHEN lifespan = 0 THEN total_sales
      ELSE total_sales / lifespan
-END AS avg_monthly_spend
+END AS avg_monthly_spend,
+create_date	
 FROM customer_aggregation
