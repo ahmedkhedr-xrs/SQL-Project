@@ -103,7 +103,8 @@ SELECT
 	 s.sls_due_dt   AS due_date,
 	 s.sls_sales    AS sales_amount,
 	 s.sls_quantity	AS quantity,
-	 s.sls_price	AS price
+	 s.sls_price	AS price,
+	 p.cost         AS cost
 FROM silver.erp_store_sales s
 LEFT JOIN gold.dim_customers c
 	ON c.customer_id = s.sls_cust_id
