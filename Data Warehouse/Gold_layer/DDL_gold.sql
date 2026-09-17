@@ -28,7 +28,7 @@ SELECT
 	ect.cst_key						   AS customer_number,
 	ect.cst_firstname				   AS first_name,
 	ect.cst_lastname				   AS last_name,
-	cr.REGION						   AS country,
+	cr.REGION						   AS city,
 	ect.cst_marital_status			   AS marital_status,
 	CASE 
 	WHEN ect.cst_gndr != 'n/a' THEN ect.cst_gndr -- erp system is master
