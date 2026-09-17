@@ -101,7 +101,7 @@ SELECT
 	 s.sls_order_dt AS order_date,
 	 s.sls_ship_dt  AS shipping_date,
 	 s.sls_due_dt   AS due_date,
-	 s.sls_sales    AS sales,
+	 s.sls_sales    AS sales_amount,
 	 s.sls_quantity	AS quantity,
 	 s.sls_price	AS price
 FROM silver.erp_store_sales s
