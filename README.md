@@ -137,11 +137,7 @@ Full entity relationships: [`Data Warehouse/Docs/data_integration.png`](./Data%2
   layer — no re-modeling of business logic in DAX, just visualization.
 
 👉 For the full list of real data-quality and design issues discovered and
-resolved during this build (join fan-out, non-unique business keys,
-mismatched ID formats across systems, MERGE conflicts on accumulated
-batches, an unrealistic near-zero profit margin caught only after building
-the dashboard, and DAX measures that summed per-category distinct counts
-instead of using `DISTINCTCOUNT`), see
+resolved during this build, see
 [`Data Warehouse/README.md`](./Data%20Warehouse/README.md) and
 [`Power BI/README.md`](./Power%20BI/README.md).
 
