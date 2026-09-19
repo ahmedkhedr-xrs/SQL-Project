@@ -74,9 +74,7 @@ SQL-Project/
 └── README.md                        # (this file)
 ```
 
-> 📌 *Adjust the `Power BI/` path above if you organized it differently on
-> GitHub — keep this tree in sync with the actual folder names so the
-> links below keep working.*
+
 
 Each subfolder has its own detailed `README.md` — this file is the map
 that ties them together. Start here, then dive into whichever layer
