@@ -101,9 +101,9 @@ CASE
 	 ELSE '50 and above'
 END AS age_group,
 CASE 
-	WHEN total_sales > 120000 THEN 'VIP'
-	WHEN lifespan > 12 AND total_sales > 75000 THEN 'VIP'
-	WHEN lifespan > 6 AND total_sales > 20000 THEN 'Regular'
+	WHEN total_sales > 600000 THEN 'VIP'
+	WHEN lifespan > 12 AND total_sales > 350000 THEN 'VIP'
+	WHEN lifespan > 6 AND total_sales > 40000 THEN 'Regular'
 	ELSE 'New' 
 END AS customer_segment ,
 last_order_date,
