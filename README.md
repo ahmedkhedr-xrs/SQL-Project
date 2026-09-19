@@ -276,17 +276,6 @@ Desktop and point its data source to your local `DataWarehouse` database.
 - **Modeling:** Dimensional Modeling / Star Schema
 - **BI & Visualization:** Power BI, DAX (`DISTINCTCOUNT`, `CALCULATE`,
   conditional measures), interactive slicers and bookmarked navigation
-- **Data Generation:** Python (synthetic dataset design with intentional
-  data-quality issues)
-
----
-
-## 🔭 Possible Future Extensions
-
-- A Python/EDA notebook layered directly on `gold.fact_sales`
-- SQL Server Agent scheduling to automate monthly batch ingestion
-- Publishing the dashboard to the Power BI Service with a scheduled
-  refresh against the warehouse
 
 ---
 
