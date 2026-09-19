@@ -85,7 +85,7 @@ load step required.
 | sales_amount     | INT           | Total monetary value of the line item, in EGP (validated as `quantity * price` during Silver cleansing). |
 | quantity         | INT           | Number of units ordered for this line item.                                                       |
 | price            | INT           | Unit price at the time of sale, in EGP.                                                            |
-
+| cost             | INT           | Cost of one unit
 ---
 
 ## Star Schema Relationships
