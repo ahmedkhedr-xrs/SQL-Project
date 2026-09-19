@@ -203,11 +203,7 @@ produces — without writing a single query.
 - A bubble chart mapping three metrics at once (quantity, revenue,
   customer count) per product category
 
-**Correctness details worth knowing:** several KPI cards (e.g. total
-customers per branch/product) initially summed a per-category count and
-over-counted customers who appear in more than one category; these were
-corrected to use `DISTINCTCOUNT` at the correct grain. Full breakdown of
-that fix and other DAX/data notes: [`Power BI/README.md`](./Power%20BI/README.md)
+
 
 ### Preview
 
