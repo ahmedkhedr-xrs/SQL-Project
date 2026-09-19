@@ -61,6 +61,7 @@ SELECT
 	city ,
 	open_date ,
 	DATEDIFF(YEAR , open_date , GETDATE()) AS lifespan_year ,
+	MIN(order_date) AS report_start_date,
 	MAX(order_date) last_order_date,
 	COUNT(DISTINCT order_number) AS total_orders,
 	COUNT(DISTINCT customer_key) AS total_customers,
@@ -82,14 +83,15 @@ SELECT
 	city ,
 	open_date ,
 	lifespan_year ,
+	report_start_date,
 	total_orders, 
 	total_customers,
 	total_sales, 
 	total_quantity,
 	-- Average Orders per Month
 	CASE 
-	WHEN DATEDIFF(MONTH,open_date,last_order_date) = 0 THEN 0 -- if a new branches is recently open
-	ELSE total_orders / DATEDIFF(MONTH,open_date,last_order_date) 
+	WHEN DATEDIFF(MONTH,report_start_date,last_order_date) = 0 THEN 0 -- if a new branches is recently open
+	ELSE total_orders / DATEDIFF(MONTH,report_start_date,last_order_date) 
 	END AS avg_orders_per_month  ,
 	-- Average Price per Order
 	CASE
@@ -98,12 +100,12 @@ SELECT
 	END AS avg_order_price ,
 	-- Average Monthly Revenue  
 	CASE 
-	WHEN DATEDIFF(MONTH,open_date,last_order_date) = 0 THEN 0 
-	ELSE total_sales / DATEDIFF(MONTH,open_date,last_order_date) 
+	WHEN DATEDIFF(MONTH,report_start_date,last_order_date) = 0 THEN 0 
+	ELSE total_sales / DATEDIFF(MONTH,report_start_date,last_order_date) 
 	END AS avg_monthly_revenue  ,
 	-- Average Yearly Revenue  
 	CASE 
-	WHEN DATEDIFF(YEAR,open_date,last_order_date) = 0 THEN 0 
-	ELSE total_sales / DATEDIFF(YEAR,open_date,last_order_date) 
+	WHEN DATEDIFF(YEAR,report_start_date,last_order_date) = 0 THEN 0 
+	ELSE total_sales / DATEDIFF(YEAR,report_start_date,last_order_date) 
 	END AS avg_yearly_revenue  
 FROM branch_aggregations
